@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     // RECORDING
     boolean isRecording = false;
-    ArrayList<NoteEvent> recordedNotes = new ArrayList<>();
+    //ArrayList<NoteEvent> recordedNotes = new ArrayList<>();
 
     // WHITE KEYS
     int c, d, e, f, g, a, b, c2, d2, e2, f2, g2, a2, b2;
