@@ -6,6 +6,7 @@
     <item name="android:background">@drawable/white_key_bg</item>
     <item name="android:text"></item>
     <item name="android:elevation">4dp</item>
+    <item name="android:layout_margin">0.5dp</item>
 </style>
 
     <style name="BlackKey">
