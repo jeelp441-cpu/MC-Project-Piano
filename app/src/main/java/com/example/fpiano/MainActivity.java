@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     // RECORDING
     boolean isRecording = false;
-    //ArrayList<NoteEvent> recordedNotes = new ArrayList<>();
+    ArrayList<NoteEvent> recordedNotes = new ArrayList<>();
 
     // WHITE KEYS
     int c, d, e, f, g, a, b, c2, d2, e2, f2, g2, a2, b2;
@@ -79,8 +79,46 @@ public class MainActivity extends AppCompatActivity {
         gs2=sp.load(this,R.raw.gs2,1);
         as2=sp.load(this,R.raw.as2,1);
 
+        bindKeys();
 
+        // BUTTONS
+        Button btnRecord = findViewById(R.id.btnRecord);
+        Button btnPlay   = findViewById(R.id.btnPlay);
+        Button btnDemo   = findViewById(R.id.btnDemo);
 
+        btnRecord.setOnClickListener(v -> {
+            recordedNotes.clear();
+            isRecording = true;
+            btnRecord.setText("■ STOP");
+        });
 
+        btnPlay.setOnClickListener(v -> {
+            isRecording = false;
+            btnRecord.setText("● REC");
+            playRecording();
+        });
+
+        btnDemo.setOnClickListener(v -> {
+            playDemoSong();
+        });
+    }
+    private void bindKeys(){
+
+    }
+    private void playRecording(){
+
+    }
+    private void  playDemoSong(){
+
+    }
+
+}
+class NoteEvent {
+    int sound;
+    int keyId;
+
+    NoteEvent(int sound, int keyId) {
+        this.sound = sound;
+        this.keyId = keyId;
     }
 }

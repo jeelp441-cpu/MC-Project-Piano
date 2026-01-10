@@ -60,7 +60,7 @@
     <LinearLayout
         android:id="@+id/whiteKeys"
         android:layout_width="0dp"
-        android:layout_height="350dp"
+        android:layout_height="280dp"
         android:orientation="horizontal"
         android:weightSum="14"
         app:layout_constraintStart_toStartOf="parent"
