@@ -103,7 +103,44 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void bindKeys(){
+        play(R.id.key_c,c); play(R.id.key_d,d); play(R.id.key_e,e);
+        play(R.id.key_f,f); play(R.id.key_g,g); play(R.id.key_a,a);
+        play(R.id.key_b,b);
 
+        play(R.id.key_c2,c2); play(R.id.key_d2,d2); play(R.id.key_e2,e2);
+        play(R.id.key_f2,f2); play(R.id.key_g2,g2); play(R.id.key_a2,a2);
+        play(R.id.key_b2,b2);
+
+        play(R.id.key_cs,cs); play(R.id.key_ds,ds); play(R.id.key_fs,fs);
+        play(R.id.key_gs,gs); play(R.id.key_as,as);
+
+        play(R.id.key_cs2,cs2); play(R.id.key_ds2,ds2);
+        play(R.id.key_fs2,fs2); play(R.id.key_gs2,gs2);
+        play(R.id.key_as2,as2);
+    }
+    private void play(int id, int sound) {
+        Button key = findViewById(id);
+
+        key.setOnTouchListener((v, e) -> {
+            if (e.getAction() == MotionEvent.ACTION_DOWN) {
+
+                key.setScaleX(0.98f);
+                key.setScaleY(0.98f);
+
+                sp.play(sound,0.7f,0.7f,1,0,1);
+
+                if (isRecording) {
+                    recordedNotes.add(new NoteEvent(sound, id));
+                }
+            }
+            else if (e.getAction()==MotionEvent.ACTION_UP ||
+                    e.getAction()==MotionEvent.ACTION_CANCEL) {
+
+                key.setScaleX(1f);
+                key.setScaleY(1f);
+            }
+            return true;
+        });
     }
     private void playRecording(){
 
