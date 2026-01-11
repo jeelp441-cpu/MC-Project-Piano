@@ -19,16 +19,16 @@
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_weight="1"
-        android:text="PIANO"
+        android:text="MOBILE PIANO"
         android:textSize="16sp"
         android:textColor="#E0E0E0"
         android:letterSpacing="0.15"/>
 
     <Button
         android:id="@+id/btnRecord"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:text="●"
         android:textSize="16sp"
@@ -37,7 +37,7 @@
 
     <Button
         android:id="@+id/btnPlay"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:text="▶"
@@ -47,7 +47,7 @@
 
     <Button
         android:id="@+id/btnDemo"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:text="♪"
