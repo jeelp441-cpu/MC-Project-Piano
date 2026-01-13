@@ -143,7 +143,21 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void playRecording(){
+        Handler handler = new Handler();
+        int delay = 0;
 
+        for (NoteEvent note : recordedNotes) {
+            handler.postDelayed(() -> {
+                sp.play(note.sound, 0.7f, 0.7f, 1, 0, 1);
+
+                Button key = findViewById(note.keyId);
+                key.setAlpha(0.5f);
+                handler.postDelayed(() -> key.setAlpha(1f), 200);
+
+            }, delay);
+
+            delay += 300;
+        }
     }
     private void  playDemoSong(){
 
