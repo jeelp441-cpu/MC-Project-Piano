@@ -160,7 +160,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void  playDemoSong(){
+        Handler handler = new Handler();
+        int delay = 0;
 
+        int[] demoSounds = {
+                c, c, g, g, a, a, g,
+                f, f, e, e, d, d, c
+        };
     }
 
 }
