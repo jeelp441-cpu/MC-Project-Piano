@@ -24,25 +24,10 @@
 </style>
 
     <style name="BlackKey">
-        <style name="BlackKey">
-            <!-- Size (real piano ratio) -->
-            <item name="android:layout_width">36dp</item>
-            <item name="android:layout_height">180dp</item>
-
-            <!-- Look -->
-            <item name="android:background">@drawable/black_key_bg</item>
-
-            <!-- Floating effect -->
-            <item name="android:elevation">14dp</item>
-
-            <!-- Remove ripple -->
-            <item name="android:foreground">@null</item>
-            <item name="android:stateListAnimator">@null</item>
-
-            <!-- No text -->
-            <item name="android:textColor">@android:color/transparent</item>
-        </style>
-
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:background">@drawable/black_key_bg</item>
+        <item name="android:elevation">14dp</item>
     </style>
 
 
