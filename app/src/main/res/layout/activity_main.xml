@@ -30,6 +30,8 @@
         android:id="@+id/btnRecord"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:elevation="30dp"
+
         android:text="●"
         android:textSize="20sp"
         android:textColor="#FF5252"

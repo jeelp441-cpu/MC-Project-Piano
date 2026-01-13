@@ -89,12 +89,12 @@ public class MainActivity extends AppCompatActivity {
         btnRecord.setOnClickListener(v -> {
             recordedNotes.clear();
             isRecording = true;
-            btnRecord.setText("■ STOP");
+            btnRecord.setText("■ ");
         });
 
         btnPlay.setOnClickListener(v -> {
             isRecording = false;
-            btnRecord.setText("● REC");
+            btnRecord.setText("● ");
             playRecording();
         });
 
