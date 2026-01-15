@@ -179,7 +179,20 @@ public class MainActivity extends AppCompatActivity {
                 R.id.key_c
         };
 
+        for (int i = 0; i < demoSounds.length; i++) {
+            int sound = demoSounds[i];
+            int keyId = demoKeys[i];
 
+            handler.postDelayed(() -> {
+                sp.play(sound,0.7f,0.7f,1,0,1);
+
+                Button key = findViewById(keyId);
+                key.setAlpha(0.5f);
+                handler.postDelayed(() -> key.setAlpha(1f),200);
+
+            }, delay);
+
+            delay += 400;
         }
     }
 }
