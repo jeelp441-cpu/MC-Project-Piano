@@ -4,19 +4,11 @@
     <item name="android:layout_width">0dp</item>
     <item name="android:layout_height">300dp</item>
     <item name="android:layout_weight">1</item>
-
-    <!-- Look -->
     <item name="android:background">@drawable/white_key_bg</item>
-
-    <!-- Depth -->
     <item name="android:elevation">5dp</item>
-
-    <!-- Spacing -->
     <item name="android:layout_margin">0.5dp</item>
 
-    <!-- Remove default ripple -->
-    <item name="android:foreground">@null</item>
-    <item name="android:stateListAnimator">@null</item>
+
 
     <!-- Text (if any) -->
     <item name="android:textColor">#424242</item>
