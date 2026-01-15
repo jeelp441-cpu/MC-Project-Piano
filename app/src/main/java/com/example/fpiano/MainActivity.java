@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
             delay += 300;
         }
     }
-    private void  playDemoSong(){
+    private void playDemoSong() {
         Handler handler = new Handler();
         int delay = 0;
 
@@ -167,8 +167,21 @@ public class MainActivity extends AppCompatActivity {
                 c, c, g, g, a, a, g,
                 f, f, e, e, d, d, c
         };
-    }
 
+        int[] demoKeys = {
+                R.id.key_c, R.id.key_c,
+                R.id.key_g, R.id.key_g,
+                R.id.key_a, R.id.key_a,
+                R.id.key_g,
+                R.id.key_f, R.id.key_f,
+                R.id.key_e, R.id.key_e,
+                R.id.key_d, R.id.key_d,
+                R.id.key_c
+        };
+
+
+        }
+    }
 }
 class NoteEvent {
     int sound;
