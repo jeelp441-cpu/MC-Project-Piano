@@ -10,7 +10,7 @@
     <!-- Thin realistic border -->
     <stroke
         android:width="1dp"
-        android:color="#CFCFCF"/>
+        android:color="#F5F5F5"/>
 
     <!-- Rounded edges -->
     <corners
