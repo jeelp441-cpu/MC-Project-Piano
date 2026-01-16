@@ -99,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
             isRecording = false;
             btnRecord.setText("● ");
             playRecording();
+            Toast.makeText(this,"Recording stopped",Toast.LENGTH_SHORT).show();
+
         });
 
         btnDemo.setOnClickListener(v -> {
