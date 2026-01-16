@@ -14,7 +14,7 @@
 
     <!-- Rounded edges -->
     <corners
-        android:radius="6dp"/>
+        android:radius="7dp"/>
 
     <!-- Bottom depth illusion -->
     <padding
