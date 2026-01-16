@@ -5,7 +5,7 @@
     <item name="android:layout_height">300dp</item>
     <item name="android:layout_weight">1</item>
     <item name="android:background">@drawable/white_key_bg</item>
-    <item name="android:elevation">5dp</item>
+    <item name="android:elevation">6dp</item>
     <item name="android:layout_margin">0.5dp</item>
 
 
@@ -19,7 +19,7 @@
         <item name="android:layout_width">36dp</item>
         <item name="android:layout_height">160dp</item>
         <item name="android:background">@drawable/black_key_bg</item>
-        <item name="android:elevation">14dp</item>
+        <item name="android:elevation">15dp</item>
     </style>
 
 
