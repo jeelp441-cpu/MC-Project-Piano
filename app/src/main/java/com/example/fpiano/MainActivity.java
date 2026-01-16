@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -90,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
             recordedNotes.clear();
             isRecording = true;
             btnRecord.setText("■ ");
+            Toast.makeText(this,"Recording started", Toast.LENGTH_SHORT).show();
+
         });
 
         btnPlay.setOnClickListener(v -> {
