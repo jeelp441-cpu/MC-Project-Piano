@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#0C0C0C">
 
-    <!-- APP TITLE -->
+
     <TextView
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- SUBTITLE -->
+
     <TextView
         android:id="@+id/txtSub"
         android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- PLAY BUTTON -->
+
     <Button
         android:id="@+id/btnPlay"
         android:layout_width="240dp"
