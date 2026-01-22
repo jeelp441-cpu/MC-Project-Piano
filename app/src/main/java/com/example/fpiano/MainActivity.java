@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         as2=sp.load(this,R.raw.as2,1);
 
         bindKeys();
+        bindTopNotes();
 
         // BUTTONS
         Button btnRecord = findViewById(R.id.btnRecord);
@@ -146,6 +147,20 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+    }
+    private void bindTopNotes() {
+        playTop(R.id.btnC, c);
+        playTop(R.id.btnCs, cs);
+        playTop(R.id.btnD, d);
+        playTop(R.id.btnDs, ds);
+        playTop(R.id.btnE, e);
+        playTop(R.id.btnF, f);
+        playTop(R.id.btnFs, fs);
+        playTop(R.id.btnG, g);
+        playTop(R.id.btnGs, gs);
+        playTop(R.id.btnA, a);
+        playTop(R.id.btnAs, as);
+        playTop(R.id.btnB, b);
     }
     private void playRecording(){
         Handler handler = new Handler();
