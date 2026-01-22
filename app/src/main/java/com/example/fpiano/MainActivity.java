@@ -162,6 +162,15 @@ public class MainActivity extends AppCompatActivity {
         playTop(R.id.btnAs, as);
         playTop(R.id.btnB, b);
     }
+    private void playTop(int id, int sound) {
+        Button btn = findViewById(id);
+        if (btn == null) return;
+
+        btn.setOnClickListener(v ->
+                sp.play(sound, 0.8f, 0.8f, 1, 0, 1)
+        );
+    }
+
     private void playRecording(){
         Handler handler = new Handler();
         int delay = 0;
