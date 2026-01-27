@@ -28,7 +28,7 @@
             android:scrollbars="none">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
@@ -102,21 +102,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="50dp">
 
-        <Button android:id="@+id/key_c"  style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_d"  style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_e"  style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_f"  style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_g"  style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_a"  style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_b"  style="@style/WhiteKey"/>
+        <Button android:id="@+id/key_c"  style="@style/WhiteKey" android:text="C"/>
+        <Button android:id="@+id/key_d"  style="@style/WhiteKey" android:text="D"/>
+        <Button android:id="@+id/key_e"  style="@style/WhiteKey" android:text="E"/>
+        <Button android:id="@+id/key_f"  style="@style/WhiteKey" android:text="F"/>
+        <Button android:id="@+id/key_g"  style="@style/WhiteKey" android:text="G"/>
+        <Button android:id="@+id/key_a"  style="@style/WhiteKey" android:text="A"/>
+        <Button android:id="@+id/key_b"  style="@style/WhiteKey" android:text="B"/>
 
-        <Button android:id="@+id/key_c2" style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_d2" style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_e2" style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_f2" style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_g2" style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_a2" style="@style/WhiteKey"/>
-        <Button android:id="@+id/key_b2" style="@style/WhiteKey"/>
+        <Button android:id="@+id/key_c2" style="@style/WhiteKey" android:text="C2"/>
+        <Button android:id="@+id/key_d2" style="@style/WhiteKey" android:text="D2"/>
+        <Button android:id="@+id/key_e2" style="@style/WhiteKey" android:text="E2"/>
+        <Button android:id="@+id/key_f2" style="@style/WhiteKey" android:text="F2"/>
+        <Button android:id="@+id/key_g2" style="@style/WhiteKey" android:text="G2"/>
+        <Button android:id="@+id/key_a2" style="@style/WhiteKey" android:text="A2"/>
+        <Button android:id="@+id/key_b2" style="@style/WhiteKey" android:text="B2"/>
     </LinearLayout>
 
     <!-- GUIDELINES -->
@@ -190,16 +190,55 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.92"/>
     <!-- BLACK KEYS -->
-    <Button android:id="@+id/key_cs"  style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g1"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_ds"  style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g2"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_fs"  style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g3"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_gs"  style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g4"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_as"  style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g5"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+    <Button android:id="@+id/key_cs"  style="@style/BlackKey" android:text="C#"
+        app:layout_constraintStart_toStartOf="@id/g1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
 
-    <Button android:id="@+id/key_cs2" style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g6"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_ds2" style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g7"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_fs2" style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g8"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_gs2" style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g9"  app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
-    <Button android:id="@+id/key_as2" style="@style/BlackKey" app:layout_constraintStart_toStartOf="@id/g10" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+    <Button android:id="@+id/key_ds"  style="@style/BlackKey" android:text="D#"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_fs"  style="@style/BlackKey" android:text="F#"
+        app:layout_constraintStart_toStartOf="@id/g3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_gs"  style="@style/BlackKey" android:text="G#"
+        app:layout_constraintStart_toStartOf="@id/g4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_as"  style="@style/BlackKey" android:text="A#"
+        app:layout_constraintStart_toStartOf="@id/g5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_cs2" style="@style/BlackKey" android:text="C#2"
+        app:layout_constraintStart_toStartOf="@id/g6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_ds2" style="@style/BlackKey" android:text="D#2"
+        app:layout_constraintStart_toStartOf="@id/g7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_fs2" style="@style/BlackKey" android:text="F#2"
+        app:layout_constraintStart_toStartOf="@id/g8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_gs2" style="@style/BlackKey" android:text="G#2"
+        app:layout_constraintStart_toStartOf="@id/g9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
+    <Button android:id="@+id/key_as2" style="@style/BlackKey" android:text="A#2"
+        app:layout_constraintStart_toStartOf="@id/g10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/whiteKeys"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
