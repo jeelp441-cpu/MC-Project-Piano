@@ -17,21 +17,19 @@ public class MainActivity extends AppCompatActivity {
 
     SoundPool sp;
 
-    // RECORDING
     boolean isRecording = false;
     ArrayList<NoteEvent> recordedNotes = new ArrayList<>();
 
-    // WHITE KEYS
+
     int c, d, e, f, g, a, b, c2, d2, e2, f2, g2, a2, b2;
 
-    // BLACK KEYS
     int cs, ds, fs, gs, as, cs2, ds2, fs2, gs2, as2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Fullscreen
+
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
@@ -41,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
         // SOUNDPOOL (SAFE SETTINGS)
         AudioAttributes attr = new AudioAttributes.Builder()
-                .setUsage(AudioAttributes.USAGE_GAME)
+                .setUsage(AudioAttributes.USAGE_MEDIA)
                 .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
                 .build();
 
         sp = new SoundPool.Builder()
-                .setMaxStreams(10)
+                .setMaxStreams(1)
                 .setAudioAttributes(attr)
                 .build();
 
@@ -109,19 +107,32 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void bindKeys(){
-        play(R.id.key_c,c); play(R.id.key_d,d); play(R.id.key_e,e);
-        play(R.id.key_f,f); play(R.id.key_g,g); play(R.id.key_a,a);
+        play(R.id.key_c,c);
+        play(R.id.key_d,d);
+        play(R.id.key_e,e);
+        play(R.id.key_f,f);
+        play(R.id.key_g,g);
+        play(R.id.key_a,a);
         play(R.id.key_b,b);
 
-        play(R.id.key_c2,c2); play(R.id.key_d2,d2); play(R.id.key_e2,e2);
-        play(R.id.key_f2,f2); play(R.id.key_g2,g2); play(R.id.key_a2,a2);
+        play(R.id.key_c2,c2);
+        play(R.id.key_d2,d2);
+        play(R.id.key_e2,e2);
+        play(R.id.key_f2,f2);
+        play(R.id.key_g2,g2);
+        play(R.id.key_a2,a2);
         play(R.id.key_b2,b2);
 
-        play(R.id.key_cs,cs); play(R.id.key_ds,ds); play(R.id.key_fs,fs);
-        play(R.id.key_gs,gs); play(R.id.key_as,as);
+        play(R.id.key_cs,cs);
+        play(R.id.key_ds,ds);
+        play(R.id.key_fs,fs);
+        play(R.id.key_gs,gs);
+        play(R.id.key_as,as);
 
-        play(R.id.key_cs2,cs2); play(R.id.key_ds2,ds2);
-        play(R.id.key_fs2,fs2); play(R.id.key_gs2,gs2);
+        play(R.id.key_cs2,cs2);
+        play(R.id.key_ds2,ds2);
+        play(R.id.key_fs2,fs2);
+        play(R.id.key_gs2,gs2);
         play(R.id.key_as2,as2);
     }
     private void play(int id, int sound) {
@@ -133,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                 key.setScaleX(0.98f);
                 key.setScaleY(0.98f);
 
-                sp.play(sound,0.7f,0.7f,1,0,1);
+                sp.play(sound, 0.65f, 0.65f, 1, 0, 1.02f);
 
                 if (isRecording) {
                     recordedNotes.add(new NoteEvent(sound, id));
